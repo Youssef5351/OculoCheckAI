@@ -27,6 +27,16 @@ Preprocessing Pipeline: OpenCV-based contour detection + CLAHE enhancement in LA
 
 Explainability: Grad-CAM heatmaps highlighting decision-relevant anatomical structures
 
+## Application Interface:-
+![OculoCheckAI Web Interface](app_screenshot.png)
+*Real-time multi-disease screening interface showing hypertensive retinopathy detection with 93.4% confidence*
+
+The web-based platform provides an intuitive clinical workflow:
+
+- **Simple Upload Interface**: Drag-and-drop or click-to-upload supports JPG, PNG, JPEG formats up to 20MB
+- **Instant Analysis**: Sub-second inference with comprehensive prediction breakdown
+- **Confidence Scoring**: Probabilistic outputs (93.4% disease confidence vs 6.6% normal) enable clinical decision support
+- **Multi-Disease Detection**: Single interface access to diabetic retinopathy, cataract, glaucoma, hypertension, and AMD screening
 
 ## Impact:-
 3-5% performance improvement over individual models with 97% accuracy and 0.99 AUC in diabetic retinopathy detection. Enables primary care clinics and telemedicine providers to detect five conditions from a single retinal imagemaking preventive care accessible at population scale.
