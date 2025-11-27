@@ -1,0 +1,77 @@
+{
+    "MobileNetV2 (Original)": {
+        "model_name": "MobileNetV2 (Original)",
+        "model_path": "models\\eyemri_final_model.keras",
+        "test_samples": 231,
+        "accuracy": 0.8181818181818182,
+        "auc": 0.8884055797210139,
+        "precision": 0.808695652173913,
+        "recall": 0.8230088495575221,
+        "sensitivity": 0.8230088495575221,
+        "specificity": 0.8135593220338984,
+        "f1_score": 0.8157894736842105,
+        "optimal_threshold": 0.009357786737382412,
+        "confusion_matrix": {
+            "true_negative": 96,
+            "false_positive": 22,
+            "false_negative": 20,
+            "true_positive": 93
+        }
+    },
+    "EfficientNetB0": {
+        "model_name": "EfficientNetB0",
+        "model_path": "models\\ensemble_EfficientNetB0.keras",
+        "test_samples": 231,
+        "accuracy": 0.974025974025974,
+        "auc": 0.9907004649767511,
+        "precision": 0.9734513274336283,
+        "recall": 0.9734513274336283,
+        "sensitivity": 0.9734513274336283,
+        "specificity": 0.9745762711864406,
+        "f1_score": 0.9734513274336283,
+        "optimal_threshold": 0.05760834366083145,
+        "confusion_matrix": {
+            "true_negative": 115,
+            "false_positive": 3,
+            "false_negative": 3,
+            "true_positive": 110
+        }
+    },
+    "ResNet50": {
+        "model_name": "ResNet50",
+        "model_path": "models\\ensemble_ResNet50.keras",
+        "test_samples": 231,
+        "accuracy": 0.9696969696969697,
+        "auc": 0.988075596220189,
+        "precision": 0.9649122807017544,
+        "recall": 0.9734513274336283,
+        "sensitivity": 0.9734513274336283,
+        "specificity": 0.9661016949152542,
+        "f1_score": 0.9691629955947136,
+        "optimal_threshold": 0.17404043674468994,
+        "confusion_matrix": {
+            "true_negative": 114,
+            "false_positive": 4,
+            "false_negative": 3,
+            "true_positive": 110
+        }
+    },
+    "Ensemble": {
+        "model_name": "Ensemble",
+        "num_models": 3,
+        "model_names": [
+            "MobileNetV2 (Original)",
+            "EfficientNetB0",
+            "ResNet50"
+        ],
+        "test_samples": 231,
+        "accuracy": 0.9783549783549783,
+        "auc": 0.9916754162291885,
+        "precision": 0.9821428571428571,
+        "recall": 0.9734513274336283,
+        "sensitivity": 0.9734513274336283,
+        "specificity": 0.9830508474576272,
+        "f1_score": 0.9777777777777777,
+        "optimal_threshold": 0.3284187316894531
+    }
+}

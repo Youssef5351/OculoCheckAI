@@ -1,0 +1,17 @@
+{
+    "test_samples": 770,
+    "accuracy": 0.925974025974026,
+    "auc": 0.9715162759318603,
+    "precision": 0.9315789473684211,
+    "recall": 0.9194805194805195,
+    "sensitivity": 0.9194805194805195,
+    "specificity": 0.9324675324675324,
+    "f1_score": 0.9254901960784314,
+    "tta_used": true,
+    "confusion_matrix": {
+        "true_negative": 359,
+        "false_positive": 26,
+        "false_negative": 31,
+        "true_positive": 354
+    }
+}
