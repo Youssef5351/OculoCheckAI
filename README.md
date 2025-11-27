@@ -10,6 +10,9 @@ Compounding this challenge, systemic diseases like diabetes and hypertension man
 ## Solution:-
 OculoCheckAI eliminates specialist dependency by transforming any standard fundus camera into an intelligent multi-disease screening platform. Our web-based diagnostic system detects five critical conditions from a single retinal image using an architecturally diverse ensemble of deep learning models.
 
+## Figures
+![Diabetic Retinopathy Detection Pipeline](figures/01_system_architecture.png)
+*Complete diabetic retinopathy detection workflow from image input to final diagnosis, showcasing individual model performance and ensemble fusion strategy*
 ## Technical Architecture:-
 Model Ensemble: EfficientNetB0/B2/B3, MobileNetV2, DenseNet121 trained in TensorFlow
 
