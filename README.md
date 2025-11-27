@@ -27,6 +27,7 @@ Preprocessing Pipeline: OpenCV-based contour detection + CLAHE enhancement in LA
 
 Explainability: Grad-CAM heatmaps highlighting decision-relevant anatomical structures
 
+
 ## Impact:-
 3-5% performance improvement over individual models with 97% accuracy and 0.99 AUC in diabetic retinopathy detection. Enables primary care clinics and telemedicine providers to detect five conditions from a single retinal imagemaking preventive care accessible at population scale.
 
@@ -71,6 +72,20 @@ Ensemble Fusion: Probabilistic merging with optimal threshold calibration
 
 Clinical Output: Disease probabilities, confidence intervals, explainability maps
 
+## Performance & Architecture
+
+<div align="center">
+  <img src="test_results_confusion" width="45%" alt="System Architecture">
+  <img src="test_results_roc.png" width="45%" alt="Performance Results">
+</div>
+
+**Technical Implementation** | **Empirical Validation**
+----------------------------|--------------------------
+Multi-model ensemble design | Quantitative performance proof
+Optimized preprocessing pipeline | Progressive accuracy improvement
+Probabilistic fusion strategy | 97.84% final ensemble accuracy
+
+The left shows our technical approach, while the right provides empirical evidence of its effectiveness.
 ## Installation & Usage:-
 # Backend Setup
 bash
