@@ -173,3 +173,8 @@ Diagnosis of Diabetic Retinopathy: https://www.kaggle.com/datasets/pkdarabi/diag
 Glaucoma Dataset: EyePACS-AIROGS-light-V2: https://www.kaggle.com/datasets/deathtrooper/glaucoma-dataset-eyepacs-airogs-light-v2
 
 Hypertension & Hypertensive Retinopathy Dataset: https://www.kaggle.com/datasets/harshwardhanfartale/hypertension-and-hypertensive-retinopathy-dataset
+
+Cataract dataset:https://www.kaggle.com/datasets/nandanp6/cataract-image-dataset
+
+AMDNet23 Fundus Image Dataset for Age-Related Macular Degeneration Disease Detection: https://data.mendeley.com/datasets/yj35kjgrv3/1
+
