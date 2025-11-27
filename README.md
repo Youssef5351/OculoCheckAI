@@ -78,6 +78,7 @@ POST /api/hypertension/predict - Hypertensive retinopathy
 
 POST /api/amd/predict - AMD detection
 
+POST /api/comprehensive-analysis - Full multi-disease screening
 
 Frontend Usage
 bash
@@ -86,6 +87,7 @@ npm install
 npm run dev
 Data & Training
 Dataset Sources
+Publicly available Kaggle datasets for each disease category
 
 Augmented with cross-validation splits
 
@@ -144,6 +146,16 @@ Academic Use License - YUVAI Youth Innovation Challenge 2025
 
 Acknowledgements
 Public Kaggle datasets for retinal disease imaging
-- Diagnosis of Diabetic Retinopathy : https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy/data
-- Glaucoma Dataset: EyePACS-AIROGS-light-V2 : https://www.kaggle.com/datasets/deathtrooper/glaucoma-dataset-eyepacs-airogs-light-v2
-- Hypertension & Hypertensive Retinopathy Dataset : https://www.kaggle.com/datasets/harshwardhanfartale/hypertension-and-hypertensive-retinopathy-dataset
+
+TensorFlow and OpenCV communities
+
+Mediapipe for pose estimation insights
+
+INCLUDE dataset methodologies for structured validation
+
+Dataset Sources
+Diagnosis of Diabetic Retinopathy: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy/data
+
+Glaucoma Dataset: EyePACS-AIROGS-light-V2: https://www.kaggle.com/datasets/deathtrooper/glaucoma-dataset-eyepacs-airogs-light-v2
+
+Hypertension & Hypertensive Retinopathy Dataset: https://www.kaggle.com/datasets/harshwardhanfartale/hypertension-and-hypertensive-retinopathy-dataset
