@@ -103,7 +103,7 @@ Real-world test sets with diverse demographic representation
 
 ## Preprocessing Pipeline
 
-![Preprocessing Pipeline](preprocessing_steps.png)
+![Preprocessing Pipeline](preprocessing_demo.png)
 *Four-stage preprocessing pipeline: Original fundus image → Automated cropping → CLAHE enhancement → Standardized resizing (224×224)*
 
 Our preprocessing pipeline ensures consistent, high-quality input across diverse camera types and imaging conditions:
