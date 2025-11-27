@@ -160,7 +160,7 @@ Explainability: Grad-CAM maps validated by ophthalmologists
 98.34% accuracy in cataract detection
 87.55% accuracy in hypertension detection 
 ## Background:-
-Retinal screening represents one of the most effective preventive medicine strategiessystemic diseases manifest visible biomarkers years before other symptoms. Yet global access remains severely limited by specialist availability and equipment costs.
+Retinal screening represents one of the most effective preventive medicine strategies systemic diseases manifest visible biomarkers years before other symptoms. Yet global access remains severely limited by specialist availability and equipment costs.
 
 OculoCheckAI bridges this gap by making multi-disease retinal screening accessible through standard fundus cameras and web platforms, enabling early detection at primary care levels and revolutionizing preventive ophthalmology.
 
