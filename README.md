@@ -1,15 +1,16 @@
-OculoCheckAI: Multi-Disease Retinal Screening Platform
-Problem
+## OculoCheckAI
+
+## Problem :-
 Over 2.2 billion people globally suffer from vision impairment, yet 90% of blindness is preventable through early detection. Five critical diseases—Diabetes, Hypertension, Glaucoma, Cataracts, and Age-Related Macular Degeneration—are leading causes of preventable blindness, but current screening workflows fail to catch them early enough.
 
 The core problem is accessibility: specialist ophthalmologists and diagnostic equipment are concentrated in urban centers, leaving rural and underserved populations without timely screening. Traditional screening requires expensive fundus cameras, trained specialists, and multiple patient visits creating massive bottlenecks. For diabetic patients alone, early retinal screening could prevent blindness in 95% of cases, yet global screening rates remain below 50% due to these access barriers.
 
 Compounding this challenge, systemic diseases like diabetes and hypertension manifest visible biomarkers in the retina months or even years before symptoms appear elsewhere in the body—but without accessible screening tools, these critical early warnings go undetected until irreversible damage occurs.
 
-Solution
+## Solution :-
 OculoCheckAI eliminates specialist dependency by transforming any standard fundus camera into an intelligent multi-disease screening platform. Our web-based diagnostic system detects five critical conditions from a single retinal image using an architecturally diverse ensemble of deep learning models.
 
-Technical Architecture
+## Technical Architecture :-
 Model Ensemble: EfficientNetB0/B2/B3, MobileNetV2, DenseNet121 trained in TensorFlow
 
 Specialized Feature Extraction:
@@ -26,7 +27,7 @@ Preprocessing Pipeline: OpenCV-based contour detection + CLAHE enhancement in LA
 
 Explainability: Grad-CAM heatmaps highlighting decision-relevant anatomical structures
 
-Impact
+## Impact :-
 3-5% performance improvement over individual models with 97% accuracy and 0.99 AUC in diabetic retinopathy detection. Enables primary care clinics and telemedicine providers to detect five conditions from a single retinal image—making preventive care accessible at population scale.
 
 Sub-second inference times via stateless RESTful API
@@ -35,23 +36,23 @@ Seamless EMR integration for telemedicine platforms
 
 Federated learning architecture enabling continuous improvement while preserving patient data privacy
 
-Stage
+## Stage :-
 Production-Ready Prototype
 
-Performance Metrics
-Diabetic Retinopathy Detection
+## Performance Metrics
+## Diabetic Retinopathy Detection
 Model	Accuracy	AUC	Sensitivity	Specificity
 Ensemble	97.84%	0.992	97.35%	98.31%
 EfficientNetB0	97.40%	0.991	97.35%	97.46%
 ResNet50	96.97%	0.988	97.35%	96.61%
 MobileNetV2	81.82%	0.888	82.30%	81.36%
-Multi-Disease Performance
+## Multi-Disease Performance
 Disease	Accuracy	AUC	Sensitivity	Specificity
 Cataracts	98.35%	0.990	96.72%	100%
 Glaucoma	92.60%	0.972	91.95%	93.25%
 Hypertension	87.85%	0.870	77.27%	95.24%
 AMD	95%+	0.996	-	-
-Project Workflow
+## Project Workflow :-
 Image Acquisition: Standard JPEG/PNG fundus images from any camera
 
 Preprocessing: Automated retinal region extraction + CLAHE enhancement
@@ -62,12 +63,12 @@ Ensemble Fusion: Probabilistic merging with optimal threshold calibration
 
 Clinical Output: Disease probabilities, confidence intervals, explainability maps
 
-Installation & Usage
-Backend Setup
+## Installation & Usage :-
+## Backend Setup
 bash
 pip install -r requirements.txt
 python app.py
-API Endpoints
+## API Endpoints
 POST /api/diabetic-retinopathy/predict - DR detection
 
 POST /api/cataract/predict - Cataract detection
@@ -80,15 +81,7 @@ POST /api/amd/predict - AMD detection
 
 POST /api/comprehensive-analysis - Full multi-disease screening
 
-Frontend Usage
-bash
-cd frontend
-npm install
-npm run dev
-Data & Training
-Dataset Sources
-Publicly available Kaggle datasets for each disease category
-
+## Data & Training :-
 Augmented with cross-validation splits
 
 Real-time test sets with diverse demographic representation
