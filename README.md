@@ -1,11 +1,11 @@
 ## OculoCheckAI
 
 ## Problem:-
-Over 2.2 billion people globally suffer from vision impairment, yet 90% of blindness is preventable through early detection. Five critical diseases—Diabetes, Hypertension, Glaucoma, Cataracts, and Age-Related Macular Degeneration—are leading causes of preventable blindness, but current screening workflows fail to catch them early enough.
+Over 2.2 billion people globally suffer from vision impairment, yet 90% of blindness is preventable through early detection. Five critical diseasesDiabetes, Hypertension, Glaucoma, Cataracts, and Age-Related Macular Degenerationare leading causes of preventable blindness, but current screening workflows fail to catch them early enough.
 
 The core problem is accessibility: specialist ophthalmologists and diagnostic equipment are concentrated in urban centers, leaving rural and underserved populations without timely screening. Traditional screening requires expensive fundus cameras, trained specialists, and multiple patient visits creating massive bottlenecks. For diabetic patients alone, early retinal screening could prevent blindness in 95% of cases, yet global screening rates remain below 50% due to these access barriers.
 
-Compounding this challenge, systemic diseases like diabetes and hypertension manifest visible biomarkers in the retina months or even years before symptoms appear elsewhere in the body—but without accessible screening tools, these critical early warnings go undetected until irreversible damage occurs.
+Compounding this challenge, systemic diseases like diabetes and hypertension manifest visible biomarkers in the retina months or even years before symptoms appear elsewhere in the bodybut without accessible screening tools, these critical early warnings go undetected until irreversible damage occurs.
 
 ## Solution:-
 OculoCheckAI eliminates specialist dependency by transforming any standard fundus camera into an intelligent multi-disease screening platform. Our web-based diagnostic system detects five critical conditions from a single retinal image using an architecturally diverse ensemble of deep learning models.
@@ -28,7 +28,7 @@ Preprocessing Pipeline: OpenCV-based contour detection + CLAHE enhancement in LA
 Explainability: Grad-CAM heatmaps highlighting decision-relevant anatomical structures
 
 ## Impact:-
-3-5% performance improvement over individual models with 97% accuracy and 0.99 AUC in diabetic retinopathy detection. Enables primary care clinics and telemedicine providers to detect five conditions from a single retinal image—making preventive care accessible at population scale.
+3-5% performance improvement over individual models with 97% accuracy and 0.99 AUC in diabetic retinopathy detection. Enables primary care clinics and telemedicine providers to detect five conditions from a single retinal imagemaking preventive care accessible at population scale.
 
 Sub-second inference times via stateless RESTful API
 
@@ -124,7 +124,7 @@ Explainability: Grad-CAM maps validated by ophthalmologists
 98.34% accuracy in cataract detection
 87.55% accuracy in hypertension detection 
 ## Background:-
-Retinal screening represents one of the most effective preventive medicine strategies—systemic diseases manifest visible biomarkers years before other symptoms. Yet global access remains severely limited by specialist availability and equipment costs.
+Retinal screening represents one of the most effective preventive medicine strategiessystemic diseases manifest visible biomarkers years before other symptoms. Yet global access remains severely limited by specialist availability and equipment costs.
 
 OculoCheckAI bridges this gap by making multi-disease retinal screening accessible through standard fundus cameras and web platforms, enabling early detection at primary care levels and revolutionizing preventive ophthalmology.
 
