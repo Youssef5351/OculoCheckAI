@@ -74,13 +74,10 @@ Clinical Output: Disease probabilities, confidence intervals, explainability map
 
 ## Performance & Architecture
 ![Manual Verification Challenge](test_results_confusion.png)
-**Technical Implementation** | **Empirical Validation**
-----------------------------|--------------------------
-Multi-model ensemble design | Quantitative performance proof
-Optimized preprocessing pipeline | Progressive accuracy improvement
-Probabilistic fusion strategy | 97.84% final ensemble accuracy
+The confusion matrices above demonstrate the classification performance of four different model architectures on the diabetic retinopathy detection task. Each model shows strong performance, with accuracies ranging from 81.82% (MobileNetV2) to 97.84% (Ensemble). The matrices reveal that while MobileNetV2 struggles somewhat with false positives and false negatives, the more sophisticated architectures (EfficientNetB0, ResNet50) achieve near-perfect classification. The ensemble model, combining predictions from multiple architectures, achieves the highest accuracy with only 2 false negatives and 3 false positives out of 231 test samples.
+These results are further validated by the ROC curves shown below, which illustrate each model's ability to distinguish between DR and No DR cases across different classification thresholds. The ensemble approach's superior discriminative power is evident in its AUC score of 0.9917.
 
-The left shows our technical approach, while the right provides empirical evidence of its effectiveness.
+![Manual Verification Challenge](test_results_roc.png)
 ## Installation & Usage:-
 # Backend Setup
 bash
@@ -102,17 +99,25 @@ POST /api/comprehensive-analysis - Full multi-disease screening
 ## Data & Training:-
 Augmented with cross-validation splits
 
-Real-time test sets with diverse demographic representation
+Real-world test sets with diverse demographic representation
 
-Preprocessing Pipeline
-Contour Detection: Automated retinal region extraction
+## Preprocessing Pipeline
 
-CLAHE Enhancement: Illumination normalization across camera types
+![Preprocessing Pipeline](preprocessing_steps.png)
+*Four-stage preprocessing pipeline: Original fundus image → Automated cropping → CLAHE enhancement → Standardized resizing (224×224)*
+
+Our preprocessing pipeline ensures consistent, high-quality input across diverse camera types and imaging conditions:
+
+1. **Contour Detection**: Automated retinal region extraction removes irrelevant peripheral artifacts and focuses on diagnostic anatomy
+2. **CLAHE Enhancement**: Contrast Limited Adaptive Histogram Equalization in LAB color space normalizes illumination variations, revealing subtle vascular patterns critical for hypertension and diabetic retinopathy detection
+3. **Standardized Resizing**: 224×224 pixel normalization ensures compatibility across all model architectures while preserving anatomical detail
+4. **Quality Assessment**: Automated suitability scoring filters low-quality images that could compromise diagnostic accuracy
+
+This pipeline transforms raw fundus photographs from varied equipment into standardized inputs optimized for ensemble model inference, enabling reliable screening regardless of camera specifications or operator expertise.
 
 Frame Selection: Optimal temporal sampling for video inputs
 
 Quality Assessment: Automated suitability scoring
-
 ## Model Architecture:-
 Ensemble Strategy
 Architectural Diversity: Complementary feature extraction patterns
