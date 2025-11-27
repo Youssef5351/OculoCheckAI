@@ -73,8 +73,7 @@ Ensemble Fusion: Probabilistic merging with optimal threshold calibration
 Clinical Output: Disease probabilities, confidence intervals, explainability maps
 
 ## Performance & Architecture
-  <img src="test_results_confusion.png" alt="System Architecture"></div>
-
+![Manual Verification Challenge](test_results_confusion.png)
 **Technical Implementation** | **Empirical Validation**
 ----------------------------|--------------------------
 Multi-model ensemble design | Quantitative performance proof
