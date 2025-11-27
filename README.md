@@ -36,22 +36,19 @@ Seamless EMR integration for telemedicine platforms
 
 Federated learning architecture enabling continuous improvement while preserving patient data privacy
 
-## Stage :-
-Production-Ready Prototype
-
 ## Performance Metrics
 ## Diabetic Retinopathy Detection
-Model	Accuracy	AUC	Sensitivity	Specificity
-Ensemble	97.84%	0.992	97.35%	98.31%
-EfficientNetB0	97.40%	0.991	97.35%	97.46%
-ResNet50	96.97%	0.988	97.35%	96.61%
+- Model	Accuracy	AUC	Sensitivity	Specificity
+- Ensemble	97.84%	0.992	97.35%	98.31%
+- EfficientNetB0	97.40%	0.991	97.35%	97.46%
+- ResNet50	96.97%	0.988	97.35%	96.61%
 MobileNetV2	81.82%	0.888	82.30%	81.36%
 ## Multi-Disease Performance
-Disease	Accuracy	AUC	Sensitivity	Specificity
-Cataracts	98.35%	0.990	96.72%	100%
-Glaucoma	92.60%	0.972	91.95%	93.25%
-Hypertension	87.85%	0.870	77.27%	95.24%
-AMD	95%+	0.996	-	-
+- Disease	Accuracy	AUC	Sensitivity	Specificity
+- Cataracts	98.35%	0.990	96.72%	100%
+- Glaucoma	92.60%	0.972	91.95%	93.25%
+- Hypertension	87.85%	0.870	77.27%	95.24%
+- AMD	95%+	0.996	-	-
 ## Project Workflow :-
 Image Acquisition: Standard JPEG/PNG fundus images from any camera
 
