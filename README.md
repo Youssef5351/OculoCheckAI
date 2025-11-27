@@ -137,7 +137,7 @@ ResNet50: Glaucoma optic disc analysis
 
 ## Results & Validation:-
 
-Real-world Testing: 770+ glaucoma samples, 231+ diabetic retinopathy cases
+Real-world Testing: 734+ glaucoma samples, 2031+ diabetic retinopathy cases
 
 Cross-disease Accuracy: Maintained performance across all five conditions
 
