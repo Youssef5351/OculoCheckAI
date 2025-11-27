@@ -10,9 +10,6 @@ Compounding this challenge, systemic diseases like diabetes and hypertension man
 ## Solution:-
 OculoCheckAI eliminates specialist dependency by transforming any standard fundus camera into an intelligent multi-disease screening platform. Our web-based diagnostic system detects five critical conditions from a single retinal image using an architecturally diverse ensemble of deep learning models.
 
-## Figures
-![Diabetic Retinopathy Detection Pipeline](figures/01_system_architecture.png)
-*Complete diabetic retinopathy detection workflow from image input to final diagnosis, showcasing individual model performance and ensemble fusion strategy*
 ## Technical Architecture:-
 Model Ensemble: EfficientNetB0/B2/B3, MobileNetV2, DenseNet121 trained in TensorFlow
 
@@ -39,6 +36,16 @@ Seamless EMR integration for telemedicine platforms
 
 Federated learning architecture enabling continuous improvement while preserving patient data privacy
 
+## Visual Complexity of Retinal Screening:-
+![Manual Verification Challenge](edge_analysis.png)
+*Side-by-side comparison showing why automated screening is essential - subtle hypertensive changes are difficult to distinguish visually*
+
+This visual challenge demonstrates why:
+- Human screening is subjective and variable
+- Early hypertensive changes are often missed
+- Consistent detection requires AI assistance
+- Our model provides objective, reproducible results
+
 ## Performance Metrics:-
 # Diabetic Retinopathy Detection
 - Model	Accuracy	AUC	Sensitivity	Specificity
@@ -46,6 +53,7 @@ Federated learning architecture enabling continuous improvement while preserving
 - EfficientNetB0	97.40%	0.991	97.35%	97.46%
 - ResNet50	96.97%	0.988	97.35%	96.61%
 MobileNetV2	81.82%	0.888	82.30%	81.36%
+
 # Multi-Disease Performance
 - Disease	Accuracy	AUC	Sensitivity	Specificity
 - Cataracts	98.35%	0.990	96.72%	100%
